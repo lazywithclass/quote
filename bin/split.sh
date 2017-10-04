@@ -20,7 +20,7 @@ function isempty() {
 }
 
 # delete header
-gsed '0,/^=============$/d' quotes.list >quotes.list.used
+sed '0,/^=============$/d' quotes.list >quotes.list.used
 
 lineread=0
 filmcounter=0
